@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Lima - Project Manager</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Perfil profissional de Arthur Lima, Project Manager com ampla experiência em gestão de projetos de TI."
+    />
+    <meta
+      name="keywords"
+      content="Project Manager, Gestão de Projetos, Tecnologia da Informação, Arthur Lima"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Arthur Lima - Project Manager" />
+    <meta
+      property="og:description"
+      content="Project Manager com experiência internacional e visão estratégica."
+    />
+    <meta
+      property="og:image"
+      content="https://artciclo.github.io/meuperfil/images/avatar.jpeg"
+    />
+    <meta property="og:image:alt" content="Foto de perfil do Arthur Lima" />
+    <meta property="og:url" content="https://artciclo.github.io/meuperfil/" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/stylex.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Troca de Idioma -->
+      <div class="language-switch">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('pt')">Português</button>
+        <button onclick="window.location.href= 'index.html'">Voltar</button>
+      </div>
+
+      <!-- Perfil -->
+      <div class="profile">
+        <div class="profile__header">
+          <img
+            src="images/robo.jpeg"
+            alt="Arthur Lima"
+            class="profile__image"
+          />
+          <h1>Arthur Lima</h1>
+          <h2>Portifólio</h2>
+        </div>
+
+        <!-- Sobre Mim -->
+        <div class="profile__about">
+          <p id="about-text">
+            Aqui estão links de alguns projetos que desenvolvi ou estou
+            desenvolvendo.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+          <ul>
+            <li>
+              <a href="https://artciclo.github.io/skatedino/" target="_blank"
+                ><span class="emoji"></span> Dino do fim do mundo (mini GAME)
+              </a>
+            </li>
+            <li>
+              <a href="https://artciclo.github.io/cadastro/" target="_blank"
+                ><span class="emoji"></span> Cadastro de funcionários
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://artciclo.github.io/datadashboard/"
+                target="_blank"
+                ><span class="emoji"></span> Dashboard exemplo
+              </a>
+            </li>
+            <li>
+              <a href="https://artciclo.github.io/login/" target="_blank"
+                ><span class="emoji"></span> Página de login
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://artciclo.github.io/geek-calculator/"
+                target="_blank"
+                ><span class="emoji"></span> Geek Calculator</a
+              >
+            </li>
+            <li>
+              <a href="https://artciclo.github.io/TEVAP_CALC/" target="_blank"
+                ><span class="emoji"></span> TEVAP Calc (calculadora de
+                materiais)
+              </a>
+            </li>
+
+            <!--<li><a href="https://www.linkedin.com/in/artciclo/" target="_blank"><span class="emoji">&#128188;</span> LinkedIn</a></li>
+                    <li><a href="https://whatsa.me/5519993294204" target="_blank"><span class="emoji">&#x1F4DE;</span> WhatsApp</a></li>
+                    <li><a href="https://github.com/artciclo" target="_blank"><span class="emoji">&#x1F4BE;</span> GitHub</a></li>
+                    <li><a href="mailto:artciclo@gmail.com"><span class="emoji">&#x1F4E7;</span> E-mail</a></li>
+                    
+                    <li><a href=""><span class="emoji">&#x1F4E7;</span> Certificados</a></li>
+                    <li><a href=""><span class="emoji">&#x1F4E7;</span> Portifólio </a></li>
+                    -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript para troca de idiomas -->
+    <script>
+      function changeLanguage(lang) {
+        const aboutText = document.getElementById("about-text");
+        if (lang === "en") {
+          aboutText.textContent =
+            "Here are links to some projects I've developed or am developing.";
+        } else {
+          aboutText.textContent =
+            "Aqui estão links de alguns projetos que desenvolvi ou estou desenvolvendo.";
+        }
+      }
+    </script>
+    <div class="footer">
+      <footer><p>Landing page developed by Arthur Lima</p></footer>
+    </div>
+  </body>
+</html>

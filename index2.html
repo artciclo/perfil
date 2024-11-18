@@ -1,0 +1,140 @@
+<!--SUMMER MODE-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Lima - Project Manager</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Perfil profissional de Arthur Lima, Project Manager com ampla experiência em gestão de projetos de TI."
+    />
+    <meta
+      name="keywords"
+      content="Project Manager, Gestão de Projetos, Tecnologia da Informação, Arthur Lima"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Arthur Lima - Project Manager" />
+    <meta
+      property="og:description"
+      content="Project Manager com experiência internacional e visão estratégica."
+    />
+    <meta
+      property="og:image"
+      content="https://artciclo.github.io/meuperfil/images/avatar.jpeg"
+    />
+    <meta property="og:image:alt" content="Foto de perfil do Arthur Lima" />
+    <meta property="og:url" content="https://artciclo.github.io/meuperfil/" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Troca de Idioma -->
+      <div class="language-switch">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('pt')">Português</button>
+        <button onclick="window.location.href= 'index.html'">
+          Office mode
+        </button>
+        <button onclick="window.location.href= 'index3.html'">Dark mode</button>
+      </div>
+
+      <!-- Perfil -->
+
+      <div class="profile">
+        <div class="profile__header">
+          <img
+            src="images/avatar.jpeg"
+            alt="Arthur Lima"
+            class="profile__image"
+          />
+          <h1>Arthur Lima</h1>
+          <h2>
+            Project Manager | Product Manager | Scrum | Agile | jr front-end
+          </h2>
+        </div>
+
+        <!-- Sobre Mim -->
+        <div class="profile__about">
+          <p id="about-text">
+            Profissional versátil com ampla experiência em gestão de projetos,
+            atualmente atuando como Project Manager em desenvolvimento de
+            software. Possui mestrado em Engenharia Civil e Ambiental, pós
+            graduação em gerenciamento de projetos e especialização em
+            gerenciamento de produtos. Experiência internacional na Austrália,
+            aplicando melhores práticas e tecnologias.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+          <ul>
+            <li>
+              <a href="files/PT Arthur Lima's CV.pdf" download
+                ><span class="emoji">&#x1F4C4;</span> Currículo - Português</a
+              >
+            </li>
+            <li>
+              <a href="files/EN Arthur Lima's CV.pdf" download
+                ><span class="emoji">&#x1F4C4;</span> Resume - English</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/artciclo/" target="_blank"
+                ><span class="emoji">&#128188;</span> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://whatsa.me/5519993294204" target="_blank"
+                ><span class="emoji">&#x1F4DE;</span> WhatsApp</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/artciclo" target="_blank"
+                ><span class="emoji">&#x1F4BE;</span> GitHub</a
+              >
+            </li>
+            <li>
+              <a href="mailto:artciclo@gmail.com"
+                ><span class="emoji">&#x1F4E7;</span> E-mail</a
+              >
+            </li>
+            <li>
+              <a href="portifolio.html"
+                ><span class="emoji"> &#x1F4C4; </span> Portifólio</a
+              >
+            </li>
+
+            <!--<li><a href=""><span class="emoji">&#x1F4E7;</span> Certificados</a></li>
+                    <li><a href=""><span class="emoji">&#x1F4E7;</span> Portifólio </a></li>
+                    -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript para troca de idiomas -->
+    <script>
+      function changeLanguage(lang) {
+        const aboutText = document.getElementById("about-text");
+        if (lang === "en") {
+          aboutText.textContent =
+            "Versatile professional with extensive experience in project management, currently working as a Project Manager in software development. Master's degree in Civil and Environmental Engineering, postgraduate degree in project management and specialization in product management. International experience in Australia, applying best practices and technologies.";
+        } else {
+          aboutText.textContent =
+            "Profissional versátil com ampla experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental, pós graduação em gerenciamento de projetos e especialização em gerenciamento de produtos. Experiência internacional na Austrália, aplicando melhores práticas e tecnologias.";
+        }
+      }
+    </script>
+    <div class="footer">
+      <footer>Landing page developed by Arthur Lima</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+/* OFFICE MODE */
+/* Iniciando meu primeiro arquivo CSS */
+body {
+  background: rgb(255, 245, 249);
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(255, 245, 245) 0%,
+    rgb(94, 97, 248) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(77, 39, 54) 0%,
+    rgba(147, 195, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 245, 249, 1) 0%,
+    rgba(147, 195, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff5f9", endColorstr="#93c3ff", GradientType=1);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  min-width: 70%;
+  margin: 25px auto;
+  padding: 16px;
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 0 25px 5px rgb(255, 255, 255);
+}
+
+.language-switch {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4b79a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.destaque {
+  color: red;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.profile__header img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 24px auto;
+  box-shadow: 5px 5px 13px 7px black;
+}
+
+.profile__header {
+  background: #4b79a1;
+  border-radius: 5px;
+  align-items: center;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 0px 0px 5px 5px #4b79a1;
+}
+
+.profile__header h2 {
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0, 5px 0, 5px 0, 5px black;
+}
+
+.profile__header h1 {
+  margin: 0;
+  text-shadow: 0, 5px 0, 5px 0, 5px black;
+}
+
+.profile__header,
+.profile__about {
+  text-align: center;
+}
+
+.profile__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: justify;
+}
+
+.profile__about div {
+  margin: auto;
+}
+
+.profile__about p {
+  width: 100%;
+  max-width: 650px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.profile__about .destaque {
+  color: white;
+}
+
+a.destaque {
+  color: blue;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links a {
+  display: flex;
+  height: 56px;
+  border: solid #444 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+  background-color: azure;
+  box-shadow: 0px 0px 15px 3px black;
+  font-size: 15px;
+  color: black;
+  font-weight: 50px;
+}
+
+.links a:hover {
+  color: #fff;
+  background-color: #4b79a1;
+  box-shadow: 0px 0px 15px 5px #4b79a1;
+  font-weight: lighter 100;
+}
+
+.links__itens {
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  font-size: 12px;
+}
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .profile {
+    margin-top: 20px;
+  }
+  .profile__about p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__header img {
+    max-width: 150px;
+  }
+  .profile__about p {
+    font-size: 16px;
+  }
+  .links a {
+    height: 48px;
+    border-radius: 15px;
+  }
+}
